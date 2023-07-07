@@ -1,9 +1,10 @@
 import React from "react";
 import { withStreamlitConnection, StreamlitComponentBase } from 'streamlit-component-lib';
-// @ts-ignore
-// import test from "fornac"
-// import "./fornac"
-// console.log(9999, test)
+
+import * as test from "./fornac.js";
+
+console.log(test)
+console.log(test.FornaContainer)
 // debugger
 // (window as any).test = test
 // console.log(test)

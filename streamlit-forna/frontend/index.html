@@ -9,5 +9,16 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
+    <link rel='stylesheet' type='text/css' href='/src/fornac.css' />
+    <script type='text/javascript' src='/src/fornac.js'></script>
+    <script type='text/javascript'>
+        var container = new fornac.FornaContainer("#rna_ss", {'animation': false});
+
+        var options = {'structure': '((..((....)).(((....))).))',
+                        'sequence': 'CGCUUCAUAUAAUCCUAAUGACCUAU'
+        };
+
+        container.addRNA(options.structure, options);
+    </script>
   </body>
 </html>
